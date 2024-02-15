@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:background="@color/purple_200"
+    android:elevation="6dp"
+
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@color/purple_200">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/profile"/>
+
+        <TextView
+            android:id="@+id/titletxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img1"
+            android:text="This is Demo tle"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/desccriptiontext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titletxt"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/img1"
+            android:text="Description"
+            android:textColor="#000"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/Datetxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desccriptiontext"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img1"
+            android:text="2022/08/11"
+            android:textColor="#000"
+            android:textSize="25sp" />
+
+<LinearLayout
+    android:layout_below="@+id/Datetxt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Edit"
+        android:textAllCaps="false"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/white"
+        android:id="@+id/editBtn"/>
+    <Button
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="delete"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/delBtn"/>
+
+
+
+</LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/jp"
+    android:gravity="center"
+    tools:context=".JournalEntry">
+
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_title"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:hint="Enter a Title"
+        android:layout_marginBottom="15dp"
+        android:textColor="#000"/>
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_descriptione"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:hint="Enter a Description"
+        android:layout_marginBottom="15dp"
+        android:textColor="#000"/>
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_date"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:hint="Add Date"
+        android:layout_marginBottom="15dp"
+        android:textColor="#000"/>
+
+
+    <ImageView
+        android:id="@+id/add_image"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="#A6A6A6"
+        tools:srcCompat="@drawable/ic_camera" />
+
+    <Button
+        android:id="@+id/uploadBtn"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="2sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/black"
+        android:text="Upload"
+        android:textAllCaps="true"
+
+        />
+
+
+
+
+    <Button
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/add_submit"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Add Now"/>
+
+    <Button
+        android:id="@+id/add_back"
+        android:layout_width="500dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="20sp" />
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
